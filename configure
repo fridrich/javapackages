@@ -43,6 +43,7 @@ sysconfdir
 root_sysconfdir
 rpmconfigdir
 rpmmacrodir
+libdir
 
 m2home
 
@@ -81,6 +82,7 @@ test -z "${mandir}" && mandir="${datadir}/man"
 test -z "${rundir}" && rundir="${localstatedir}/run"
 test -z "${sysconfdir}" && sysconfdir="${prefix}/etc"
 test -z "${root_sysconfdir}" && root_sysconfdir="${prefix}/etc"
+test -z "${libdir}" && libdir="${prefix}/lib/"
 test -z "${rpmconfigdir}" && rpmconfigdir="${prefix}/lib/rpm"
 test -z "${rpmmacrodir}" && rpmmacrodir="${rpmconfigdir}/macros.d"
 

@@ -13,17 +13,17 @@
 #
 # Root directory where all Java VMs/SDK/JREs are installed.
 #
-%_jvmdir        %{_prefix}/lib/jvm
+%_jvmdir        %{_libdir}/jvm
 
 #
 # Root directory for all Java VM/SDK/JRE's private things.
 #
-%_jvmprivdir    %{_prefix}/lib/jvm-private
+%_jvmprivdir    %{_libdir}/jvm-private
 
 #
 # Root directory for all architecture dependent parts of Java VM/SDK/JRE's
 #
-%_jvmlibdir     %{_prefix}/lib/jvm
+%_jvmlibdir     %{_libdir}/jvm
 
 #
 # Root directory for all architecture independent parts of Java VM/SDK/JRE's
@@ -38,7 +38,7 @@
 #
 # Root directory for all common architecture dependent parts of Java VM/SDK/JRE's
 #
-%_jvmcommonlibdir %{_prefix}/lib/jvm-common
+%_jvmcommonlibdir %{_libdir}/jvm-common
 
 #
 # Root directory for all common architecture independent parts of Java VM/SDK/JRE's
@@ -64,7 +64,7 @@
 #
 # Directory where arch-specific (JNI) version-independent jars are installed.
 #
-%_jnidir        %{_prefix}/lib/java
+%_jnidir        %{_libdir}/java
 
 #
 # Root directory where all javadoc is installed. Also already in RH macros.
