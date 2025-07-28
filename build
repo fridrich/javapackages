@@ -114,5 +114,3 @@ manpage build-classpath
 manpage build-jar-repository
 manpage rebuild-jar-repository
 manpage shade-jar
-
-(cd ./python && "${pyinterpreter}" setup.py build)
