@@ -41,6 +41,7 @@ expand()
     sed \
         -e "s|@{bindir}|${bindir}|g" \
         -e "s|@{datadir}|${datadir}|g" \
+        -e "s|@{libdir}|${libdir}|g" \
         -e "s|@{javaconfdir}|${javaconfdir}|g" \
         -e "s|@{javadir}|${javadir}|g" \
         -e "s|@{jnidir}|${jnidir}|g" \
