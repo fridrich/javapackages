@@ -239,8 +239,3 @@ if $with_gradle; then
     inst_data gradle/init.gradle "${datadir}/gradle-local"
     inst_data target/gradle_build.7 "${mandir}/man7"
 fi
-
-exec >files-python
-(cd ./python && "${pyinterpreter}" setup.py install -O1 --skip-build --prefix "${prefix}" --root "${DEST}") >&2
-echo "${prefix}/lib/python*/site-packages/javapackages"
-echo "${prefix}/lib/python*/site-packages/javapackages-*.egg-info"
