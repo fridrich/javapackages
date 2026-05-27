@@ -193,7 +193,7 @@ if __name__ == "__main__":
             builddep_data = file.read()
         #compressed = gzip.compress(builddep_data, mtime=0)
         buf = io.BytesIO()
-        with gzip.GzipFile(fileobj=buf, mode='wb', mtime=0) as f:
+        with gzip.GzipFile(fileobj=buf, mode='wb', mtime=0, compresslevel=9) as f:
             f.write(builddep_data)
         compressed = buf.getvalue()
         encoded = base64.b64encode(compressed).decode()
